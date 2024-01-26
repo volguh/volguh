@@ -1,0 +1,126 @@
+:root {
+  --black:#000;
+  --white:#FFF;
+  --red:#FF1B1C;
+  --grey:#1A1A1A;
+}
+@font-face {
+  font-family: Studio Sans;
+  src: url(../fonts/StudioSans.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Studio Sans;
+  src: url(../fonts/StudioSansLight.otf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: Studio Sans Bold;
+  src: url(../fonts/StudioSansBold.otf) format("truetype");
+  font-weight: 600;
+  font-style: bold;
+}
+
+
+.page {
+  background-color: var(--black);
+  font-family: Studio Sans;
+  letter-spacing: -.8px;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* НАВБАР */
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--grey);
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 64px;
+}
+.header__nav-link {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ПЕРВЫЙ ВСТУПИТЕЛЬНЫЙ БЛОК */
+section {
+  margin-bottom: 240px;;
+}
+.expo {
+  min-height: 980px;
+  background-image: url(../img/expo_background.png);
+}
+.expo__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 144px;
+}
+.expo__img {
+  height: 590px;
+  width: 420px;
+  background-image: url(../img/LeonKuzmin.JPG);
+  background-size: cover;
+  background-position: center center;
+}
+.expo__text {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.expo__name {
+}
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.expo__about {
+  letter-spacing: normal;
+}
+.highlight {
+  color: var(--red);
+}
+.expo__about {
+  font-size: 22px;
+}
+.link {
+  color: var(--red);
+  transition: ease-in-out .2s;
+  text-decoration: underline;
+}
+.link:hover { 
+  text-decoration: underline;
+  color: #f85555;
+}
+
+/* БЛОК ОБО МНЕ */
+.about {
+  margin-bottom: 240px;
+}
+.about__block {
+  display: flex;
+  gap: 28px;
+  margin:  64px 0 44px 0;
+}
+.about__paragraph {
+  font-size: 24px;
+}
+
+/* БЛОК МОИ РАЗРАБОТКИ */
+
